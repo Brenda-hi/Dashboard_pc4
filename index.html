@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOE Dashboard UNI-FIIS · Control Estadístico de Procesos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">📊</div>
+      <div class="brand-text">
+        <h1>DOE Dashboard<br>UNI&#8209;FIIS</h1>
+        <p class="brand-sub">Control Estadístico<br>de Procesos</p>
+      </div>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <nav class="nav" id="nav">
+      <button class="nav-item is-active" data-tab="portada">
+        <span class="nav-icon">🗂️</span>
+        <span class="nav-label">Portada</span>
+      </button>
+      <button class="nav-item" data-tab="problema-1">
+        <span class="nav-icon">📐</span>
+        <span class="nav-label">Problema 1</span>
+      </button>
+      <button class="nav-item" data-tab="problema-2">
+        <span class="nav-icon">📏</span>
+        <span class="nav-label">Problema 2</span>
+      </button>
+      <button class="nav-item" data-tab="problema-3">
+        <span class="nav-icon">🔬</span>
+        <span class="nav-label">Problema 3</span>
+      </button>
+      <button class="nav-item" data-tab="problema-4">
+        <span class="nav-icon">🧪</span>
+        <span class="nav-label">Problema 4</span>
+      </button>
+      <button class="nav-item" data-tab="problema-5">
+        <span class="nav-icon">🧮</span>
+        <span class="nav-label">Problema 5</span>
+      </button>
+      <button class="nav-item" data-tab="problema-6">
+        <span class="nav-icon">📈</span>
+        <span class="nav-label">Problema 6</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="pill-status" id="progress-pill">0 / 6 problemas completos</span>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+
+    <!-- ---------- PORTADA ---------- -->
+    <section class="tab-panel is-active" id="portada" data-panel="portada">
+
+      <header class="cover-hero">
+        <div class="cover-hero__eyebrow">Assessment · Industrial Analytics Challenge</div>
+        <h2 class="cover-hero__title">PC4 — Control Estadístico de Procesos</h2>
+        <p class="cover-hero__desc">
+          Evaluación técnica que simula un escenario empresarial real de control de calidad.
+          Cada problema exige identificar la carta de control adecuada, resolverla en Excel y
+          Minitab Assistant, interpretar los resultados y documentar el apoyo brindado por la IA.
+        </p>
+      </header>
+
+      <div class="card identity-card">
+        <div class="card-title">
+          <span class="card-title__icon">🪪</span>
+          <span>Solución de la tercera práctica calificada</span>
+        </div>
+
+        <div class="identity-grid">
+          <label class="field">
+            <span class="field-label"><span class="field-icon">👤</span>Nombre</span>
+            <input type="text" class="field-input" placeholder="Apellidos y nombres" value="">
+          </label>
+          <label class="field">
+            <span class="field-label"><span class="field-icon">🆔</span>Código</span>
+            <input type="text" class="field-input" placeholder="20XXXXXXX" value="">
+          </label>
+          <label class="field">
+            <span class="field-label"><span class="field-icon">📚</span>Curso</span>
+            <input type="text" class="field-input" placeholder="TE603-V" value="">
+          </label>
+          <label class="field">
+            <span class="field-label"><span class="field-icon">📅</span>Fecha</span>
+            <input type="date" class="field-input" value="">
+          </label>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title"><span class="card-title__icon">🎯</span><span>Objetivo</span></div>
+          <p class="card-text">
+            La PC4 simula una evaluación técnica empresarial. Se permite el uso de Excel, Minitab
+            e Inteligencia Artificial como herramientas de apoyo. Se evalúa el razonamiento, la
+            selección correcta de la carta de control y la calidad de la interpretación —
+            no solo el resultado numérico.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title"><span class="card-title__icon">🧭</span><span>Contenido de cada problema</span></div>
+          <ul class="checklist">
+            <li>Descripción del problema</li>
+            <li>Identificación de la carta de control</li>
+            <li>Desarrollo en Excel</li>
+            <li>Desarrollo en Minitab</li>
+            <li>Interpretación de resultados</li>
+            <li>Conclusiones</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><span class="card-title__icon">📦</span><span>Estructura de entrega</span></div>
+        <pre class="tree">PC4_Apellido_Nombre.zip
+├── index.html
+├── css/estilos.css
+├── js/script.js
+├── img/
+├── excel/solucion.xlsx
+├── minitab/proyecto.mpx
+├── prompts/prompts.md
+├── declaracionIA.md
+└── README.md</pre>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><span class="card-title__icon">🤖</span><span>Declaración de uso de IA</span></div>
+        <div class="identity-grid identity-grid--decl">
+          <label class="field">
+            <span class="field-label">Herramientas de IA utilizadas</span>
+            <input type="text" class="field-input" placeholder="Ej. Claude, ChatGPT, Copilot…">
+          </label>
+          <label class="field">
+            <span class="field-label">% aproximado de apoyo de IA</span>
+            <input type="text" class="field-input" placeholder="Ej. 30%">
+          </label>
+        </div>
+        <p class="card-text card-text--muted">
+          Declaro que la interpretación técnica, la selección de las cartas de control y las
+          conclusiones presentadas son de elaboración propia. La IA se utilizó únicamente como
+          herramienta de apoyo, según el registro de prompts documentado en cada problema.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- ---------- PROBLEMAS 1–6 (generadas por plantilla) ---------- -->
+    <div id="problemas-root"></div>
+
+    <footer class="app-footer">
+      <span>DOE Dashboard UNI-FIIS</span>
+      <span class="dot">·</span>
+      <span>PC4 Control Estadístico de Procesos</span>
+      <span class="dot">·</span>
+      <span>Plantilla lista para completar con los datos de cada ejercicio</span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="js/vendor/chart.umd.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
